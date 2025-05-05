@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:cardview="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginBottom="12dp"
+	cardview:cardCornerRadius="16dp"
+	cardview:cardElevation="6dp"
+	android:background="@android:color/transparent">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:padding="16dp"
+		android:gravity="center_vertical"
+		android:background="@drawable/bg_glass_blur">
+
+		<LinearLayout
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/tvTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Advanced Data Analysis"
+				android:textColor="@color/textPrimary"
+				android:textStyle="bold"
+				android:textSize="16sp" />
+
+			<TextView
+				android:id="@+id/tvAuthor"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Prof. Kiran"
+				android:textColor="@color/textSecondary"
+				android:textSize="14sp" />
+
+			<TextView
+				android:id="@+id/tvBranch"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Branch: CSE"
+				android:textColor="@color/textSecondary"
+				android:textSize="13sp" />
+
+			<TextView
+				android:id="@+id/tvAvailable"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Available: Yes"
+				android:textColor="@android:color/holo_green_dark"
+				android:textSize="13sp" />
+		</LinearLayout>
+
+		<Button
+			android:id="@+id/btnBrowse"
+			android:layout_width="100dp"
+			android:layout_height="40dp"
+			android:text="BROWSE"
+			android:textAllCaps="true"
+			android:textStyle="bold"
+			android:textColor="@android:color/white"
+			android:background="@drawable/button_primary"
+			android:layout_marginStart="16dp" />
+	</LinearLayout>
+</androidx.cardview.widget.CardView>

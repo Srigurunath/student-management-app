@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:cardview="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/bg_glass_blur"
+	android:padding="24dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center_horizontal">
+
+		<!-- Login Title -->
+		<TextView
+			android:id="@+id/loginTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Login"
+			android:textSize="30sp"
+			android:textStyle="bold"
+			android:textColor="@color/textPrimary"
+			android:layout_marginTop="48dp"
+			android:layout_marginBottom="32dp" />
+
+		<!-- Student ID Field with Shadow -->
+		<androidx.cardview.widget.CardView
+			android:layout_width="300dp"
+			android:layout_height="wrap_content"
+			cardview:cardElevation="8dp"
+			cardview:cardCornerRadius="20dp"
+			cardview:cardBackgroundColor="#CCFFFFFF"
+			android:layout_marginBottom="16dp"
+			android:layout_gravity="center_horizontal">
+
+			<EditText
+				android:id="@+id/etStudentId"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@android:color/transparent"
+				android:hint="Student ID (optional)"
+				android:padding="14dp"
+				android:inputType="number"
+				android:textColor="@color/textPrimary"
+				android:textColorHint="@color/hintColor" />
+		</androidx.cardview.widget.CardView>
+
+		<!-- Email Field with Shadow -->
+		<androidx.cardview.widget.CardView
+			android:layout_width="300dp"
+			android:layout_height="wrap_content"
+			cardview:cardElevation="8dp"
+			cardview:cardCornerRadius="20dp"
+			cardview:cardBackgroundColor="#CCFFFFFF"
+			android:layout_marginBottom="16dp"
+			android:layout_gravity="center_horizontal">
+
+			<EditText
+				android:id="@+id/etEmail"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@android:color/transparent"
+				android:hint="Email Address (optional)"
+				android:padding="14dp"
+				android:inputType="textEmailAddress"
+				android:autofillHints="emailAddress"
+				android:textColor="@color/textPrimary"
+				android:textColorHint="@color/hintColor" />
+		</androidx.cardview.widget.CardView>
+
+		<!-- Password Field with Shadow -->
+		<androidx.cardview.widget.CardView
+			android:layout_width="300dp"
+			android:layout_height="wrap_content"
+			cardview:cardElevation="8dp"
+			cardview:cardCornerRadius="20dp"
+			cardview:cardBackgroundColor="#CCFFFFFF"
+			android:layout_marginBottom="32dp"
+			android:layout_gravity="center_horizontal">
+
+			<EditText
+				android:id="@+id/etPassword"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@android:color/transparent"
+				android:hint="Password"
+				android:padding="14dp"
+				android:inputType="textPassword"
+				android:autofillHints="password"
+				android:textColor="@color/textPrimary"
+				android:textColorHint="@color/hintColor" />
+		</androidx.cardview.widget.CardView>
+
+		<!-- Login Button -->
+		<Button
+			android:id="@+id/btnLogin"
+			android:layout_width="250dp"
+			android:layout_height="50dp"
+			android:background="@drawable/blue_round_button"
+			android:text="LOGIN"
+			android:textColor="@android:color/white"
+			android:textStyle="bold"
+			android:elevation="6dp"
+			android:layout_gravity="center_horizontal" />
+
+	</LinearLayout>
+</ScrollView>

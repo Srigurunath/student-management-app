@@ -1,0 +1,46 @@
+<resources>
+	<string name="app_name" translatable="false">Student Management</string>
+
+	<!-- Login Screen -->
+	<string name="login" translatable="false">Login</string>
+	<string name="email_hint" translatable="false">Email Address</string>
+	<string name="password_hint" translatable="false">Password</string>
+	<string name="log_in" translatable="false">LOG IN</string>
+
+	<!-- Dashboard Screen -->
+	<string name="welcome" translatable="false">Welcome!</string>
+	<string name="student_id" translatable="false">Student ID: -</string>
+	<string name="email_label" translatable="false">Email: -</string>
+	<string name="bus_status" translatable="false">BUS STATUS</string>
+	<string name="payment_history" translatable="false">PAYMENT HISTORY</string>
+	<string name="logout" translatable="false">LOGOUT</string>
+
+	<!-- Stationery Screen -->
+	<string name="stationery_for_b_tech_students" translatable="false">Stationery for B.Tech Students</string>
+	<string name="add_to_cart" translatable="false">Add to Cart</string>
+	<string name="buy_now" translatable="false">Buy Now</string>
+	<string name="payment" translatable="false">PAYMENT</string>
+
+	<!-- Library Dashboard -->
+	<string name="library_dashboard" translatable="false">Library Dashboard</string>
+	<string name="class_label" translatable="false">Class</string>
+	<string name="btech" translatable="false">B.TECH</string>
+	<string name="section" translatable="false">Section</string>
+	<string name="year" translatable="false">Year</string>
+	<string name="subject_label" translatable="false">Subjects</string>
+	<string name="science" translatable="false">Science</string>
+	<string name="ml" translatable="false">Machine Learning</string>
+	<string name="networks" translatable="false">Computer Networks</string>
+	<string name="data" translatable="false">Data</string>
+	<string name="books" translatable="false">Books</string>
+	<string name="browse" translatable="false">Browse</string>
+	<string name="ai_recommendations" translatable="false">AI Recommendations</string>
+	<string name="ai_card_1" translatable="false">You may like: "Machine Learning Basics"</string>
+	<string name="ai_card_2" translatable="false">Try reading: "Networks Made Easy"</string>
+	<string name="subjects" translatable="false">Subjects</string>
+	<string name="bus_status_format" translatable="false">Bus Status: %1$s</string>
+	<string name="delayed_5_min" translatable="false">Delayed 5 min</string>
+	<string name="_2_5_km_away" translatable="false">2.5 km away</string>
+	<string name="bus_status_title" translatable="false">Bus Status</string>
+	<string name="bus_status_description" translatable="false">Last seen near Gate 3</string>
+</resources>

@@ -1,0 +1,21 @@
+<resources>
+    <!-- Background Colors -->
+    <color name="backgroundLight">#F5F5F5</color> <!-- Light Mode background -->
+    <color name="backgroundDark">#121212</color>  <!-- Dark Mode background -->
+
+    <!-- Text Colors -->
+    <color name="textPrimary">#212121</color>     <!-- Light Mode text -->
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#2196F3</color>
+    <!-- Dark Mode text -->
+
+    <!-- Input Field Colors -->
+    <color name="inputFieldLight">#FFFFFF</color>  <!-- Light Mode input -->
+    <color name="inputFieldColor">#1E1E1E</color>  <!-- Dark Mode input -->
+    <color name="hintColor">#B0B0B0</color> <!-- Light gray hint text -->
+
+    <!-- Button Color -->
+    <color name="buttonColor">#1976D2</color>      <!-- Primary Blue Button -->
+    <color name="primary">#007AFF</color> <!-- Apple-style blue -->
+    <color name="textSecondary">#777777</color>
+</resources>

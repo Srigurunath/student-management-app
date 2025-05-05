@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:padding="16dp"
+	android:layout_margin="12dp"
+	android:background="@drawable/bg_glass_blur"
+	android:elevation="12dp"
+	android:clipToPadding="false"
+	android:gravity="center_horizontal">
+
+	<TextView
+		android:id="@+id/busNumber"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Bus 2105"
+		android:textStyle="bold"
+		android:textSize="20sp"
+		android:textColor="@android:color/black"
+		android:fontFamily="sans-serif-medium" />
+
+	<TextView
+		android:id="@+id/distance"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="2.5 mi away"
+		android:textSize="16sp"
+		android:textColor="@android:color/darker_gray"
+		android:layout_marginTop="4dp" />
+
+	<TextView
+		android:id="@+id/delay"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Delayed 5 min"
+		android:textSize="16sp"
+		android:textColor="@android:color/holo_red_dark"
+		android:layout_marginTop="4dp" />
+
+	<ImageView
+		android:id="@+id/mapView"
+		android:layout_width="match_parent"
+		android:layout_height="160dp"
+		android:layout_marginTop="12dp"
+		android:scaleType="centerCrop"
+		android:contentDescription="Map preview"
+		android:background="@drawable/bg_card_shadow"
+		android:src="@drawable/static_map_bus" />
+</LinearLayout>

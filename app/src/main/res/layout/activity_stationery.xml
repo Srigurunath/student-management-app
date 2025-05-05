@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#E6F0FA"
+	tools:context=".ui.theme.StationeryActivity"
+	android:padding="16dp">
+
+	<!-- Title -->
+	<TextView
+		android:id="@+id/titleText"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Stationery for\nB.Tech Students"
+		android:textSize="22sp"
+		android:textStyle="bold"
+		android:textColor="@android:color/black"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/themeToggle"
+		android:layout_marginEnd="8dp" />
+
+	<!-- Theme Switch -->
+	<Switch
+		android:id="@+id/themeToggle"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		app:layout_constraintTop_toTopOf="@id/titleText"
+		app:layout_constraintEnd_toEndOf="parent" />
+
+	<!-- Stationery Grid -->
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/stationeryRecyclerView"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+		app:spanCount="2"
+		app:layout_constraintTop_toBottomOf="@id/titleText"
+		app:layout_constraintBottom_toTopOf="@+id/paymentSection"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:paddingTop="16dp"
+		android:clipToPadding="false" />
+
+	<!-- Payment Section -->
+	<LinearLayout
+		android:id="@+id/paymentSection"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="PAYMENT"
+			android:textStyle="bold"
+			android:textSize="14sp"
+			android:textColor="@android:color/black"
+			android:layout_marginBottom="8dp"
+			android:layout_gravity="start" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center"
+			android:layout_marginTop="4dp">
+
+			<ImageView
+				android:layout_width="60dp"
+				android:layout_height="32dp"
+				android:src="@drawable/gpay_logo"
+				android:scaleType="fitCenter"
+				android:layout_marginEnd="8dp" />
+
+			<ImageView
+				android:layout_width="60dp"
+				android:layout_height="32dp"
+				android:src="@drawable/phonepay_logo"
+				android:scaleType="fitCenter"
+				android:layout_marginEnd="8dp" />
+
+			<ImageView
+				android:layout_width="60dp"
+				android:layout_height="32dp"
+				android:src="@drawable/paytm_logo"
+				android:scaleType="fitCenter" />
+		</LinearLayout>
+	</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
